@@ -1,4 +1,6 @@
 <label for="name">Name:</label>
-<input type="text"  [formControl]="name" id="name">
+<input type="text" [formControl]="name">
+<input type="text" [formControl]="email">
 <p>Value: {{ name.value}}</p>
+<p>Email: {{ email.value }}</p>
 <button (click)="updateName()">Update value</button>

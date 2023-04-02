@@ -9,9 +9,11 @@ import { FormControl } from '@angular/forms';
 export class NameEditorComponent {
 
   name = new FormControl('')
+  email = new FormControl('')
 
   updateName() {
     this.name.setValue("Nancy")
+    this.email.setValue("adonsijules@gmail.com")
   }
 
 
